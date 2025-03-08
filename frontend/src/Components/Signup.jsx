@@ -11,7 +11,7 @@ const Signup = () => {
     })
     const RegisterUser = ()=>{
         console.log(userdetail);
-        axios.post("http://localhost:7008/user/signup",userdetail)
+        axios.post("https://fullstack-weekend.onrender.com/user/signup",userdetail)
         .then((res)=>{
             console.log(res.data.message);
             alert(res.data.message)

@@ -8,7 +8,7 @@ const Dashboard = () => {
    const [image, setimage] = useState("")
 
    useEffect(() => {
-     axios.get("http://localhost:7008/user/verify",{
+     axios.get("https://fullstack-weekend.onrender.com/user/verify",{
         headers:{
             Authorization:`bearer ${token}`
         },      
@@ -36,7 +36,7 @@ const Dashboard = () => {
    }
 
    const Uploadimage = () =>{
-    axios.post("http://localhost:7008/user/upload",{image},{
+    axios.post("https://fullstack-weekend.onrender.com/user/upload",{image},{
         headers:{
             Authorization:`bearer ${token}`
         },     

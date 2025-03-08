@@ -13,7 +13,7 @@ const Login = () => {
             toast.error("Please fill all the fields");
         }else{
             console.log(email, password);
-            axios.post("http://localhost:7008/user/login",{email, password})
+            axios.post("https://fullstack-weekend.onrender.com/user/login",{email, password})
             .then((res)=>{
                 console.log(res);
                 localStorage.setItem("token", res.data.token)

@@ -106,6 +106,8 @@ const otpmodel = require("../models/otp.model")
         {$set:{Profileimage:uploadedimage.secure_url}},
         {new:true}
       )
+      console.log(updateimge);
+      
 
       if (updateimge) {
         res.status(200).send({message:"profile updated successfully", status:true})
